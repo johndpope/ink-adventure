@@ -54,6 +54,10 @@ public class Script : MonoBehaviour {
                 _inkStory.ObserveVariable("Char_Image", (string varName, object newValue) => {
                     loadImage((string)newValue);
                 });
+//				_inkStory.ObserveVariable ("food", (string varName, object newValue) => {
+//					 updateFood((int)newValue);
+//				});
+//				int food = (int)_inkStory.variablesState ["food"];
                 storyText.GetComponentInChildren<UnityEngine.UI.Text>().text = _inkStory.ContinueMaximally ();
 				storyText.transform.SetParent (canvas.transform, false);
                 storyText.transform.SetSiblingIndex(1);

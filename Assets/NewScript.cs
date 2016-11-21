@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class NewScript : MonoBehaviour {
 
     public int State;
+	public int Food;
     public Text stateText;
     public GameObject map;
     public GameObject text;
@@ -32,4 +33,11 @@ public class NewScript : MonoBehaviour {
         Debug.Log("Hiding and Showing" + hideShow);
         text.SetActive(hideShow);
     }
+
+//	public void updateFood()
+//	{
+//		updateFood = int food = ((int)newValue);
+//		stateText = Food.ToString();
+//	}
+
 }
